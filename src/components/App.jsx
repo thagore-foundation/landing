@@ -223,9 +223,9 @@ export default function App() {
           <span className="font-bold text-2xl tracking-tighter">THAGORE</span>
         </div>
         <div className="hidden md:flex gap-10 font-mono text-xs tracking-[0.3em] uppercase text-gray-400">
-          <a href="#features" className="hover:text-rose-500 transition-colors">Kiến trúc</a>
-          <a href="#docs" className="hover:text-rose-500 transition-colors">Tài liệu</a>
-          <a href="#community" className="hover:text-rose-500 transition-colors">Benchmark</a>
+          <a href="#features" className="hover:text-rose-500 transition-colors">Kiến trúc Thagore</a>
+          <a href="#docs" className="hover:text-rose-500 transition-colors">Tổng quan ngôn ngữ</a>
+          <a href="#community" className="hover:text-rose-500 transition-colors">Benchmark hiệu năng</a>
         </div>
         <a href="https://docs.thagore.io.vn/install/quick-start/">
         <button className="px-8 py-3 bg-rose-600 text-white font-bold tracking-widest uppercase text-xs hover:bg-rose-500 transition-colors shadow-[0_0_20px_rgba(225,29,72,0.4)]">
@@ -238,7 +238,7 @@ export default function App() {
         <div className="hero-dragon absolute top-1/4 right-10 md:right-32 pointer-events-none opacity-0">
           <img
             src={logo}
-            alt="Dragon"
+            alt="Biểu tượng rồng của ngôn ngữ lập trình Thagore"
             className="w-[300px] h-[300px] md:w-[700px] md:h-[700px] object-contain drop-shadow-[0_0_120px_rgba(225,29,72,0.5)]"
             onError={(e) => {
               e.currentTarget.style.display = "none";
@@ -247,9 +247,6 @@ export default function App() {
         </div>
 
         <div className="relative z-10 max-w-6xl">
-          <h2 className="text-rose-600 font-mono text-base md:text-xl mb-6 tracking-[0.2em] md:tracking-[0.3em] uppercase flex items-center gap-3">
-            <Flame className="w-5 h-5 animate-pulse" /> Ngôn ngữ lập trình thế hệ mới
-          </h2>
           <h1 className="hero-title text-[3.5rem] sm:text-[5rem] md:text-[7rem] lg:text-[9rem] xl:text-[10rem] font-black tracking-tighter leading-[0.9] md:leading-[0.85] mb-10">
             <SplitText itemClass="letter" className="text-white block drop-shadow-lg md:drop-shadow-xl">
               CÚ PHÁP ĐƠN GIẢN.
@@ -258,10 +255,13 @@ export default function App() {
               SỨC MẠNH VƯỢT TRỘI.
             </SplitText>
           </h1>
+          <h2 className="text-rose-600 font-mono text-base md:text-xl mb-6 tracking-[0.2em] md:tracking-[0.3em] uppercase flex items-center gap-3">
+            <Flame className="w-5 h-5 animate-pulse" /> Ngôn ngữ lập trình thế hệ mới
+          </h2>
           <div className="hero-subtitle opacity-0" style={{ transform: "translateY(20px)" }}>
             <p className="text-lg md:text-2xl font-light text-gray-400 max-w-3xl leading-relaxed mb-12">
-              Thagore mang đến sự thanh lịch của Python và hiệu năng tàn bạo của C.
-              Vừa <strong className="text-white font-semibold border-b border-rose-500">thông dịch</strong> linh hoạt, vừa <strong className="text-white font-semibold border-b border-rose-500">biên dịch</strong> siêu tốc.
+              Thagore là ngôn ngữ lập trình thế hệ mới kết hợp cú pháp thanh lịch kiểu Python và hiệu năng cấp C/C++.
+              Vừa <strong className="text-white font-semibold border-b border-rose-500">thông dịch</strong> linh hoạt cho phát triển nhanh, vừa <strong className="text-white font-semibold border-b border-rose-500">biên dịch AOT</strong> để triển khai tối ưu trên production.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 font-mono text-sm">
               <a href="https://docs.thagore.io.vn/install/quick-start/">
@@ -295,10 +295,10 @@ export default function App() {
         </div>
         <div className="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center relative z-10">
           <div>
-            <h3 className="code-text-anim text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-8 leading-none opacity-0">
+            <h2 className="code-text-anim text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-8 leading-none opacity-0">
               VIẾT ÍT HƠN.<br />
               <span className="text-rose-600">CHẠY NHANH HƠN.</span>
-            </h3>
+            </h2>
             <p className="code-text-anim text-xl md:text-2xl text-gray-400 font-light mb-12 opacity-0 leading-relaxed">
               Không cần học lại cú pháp. Nếu bạn biết Python, bạn đã biết Thagore. Trình biên dịch JIT và AOT tích hợp sẵn sẽ tối ưu hóa mã của bạn tới từng cycle phần cứng.
             </p>
@@ -347,6 +347,9 @@ export default function App() {
       <section ref={featureRef} id="features" className="py-32 px-6 md:px-12 lg:px-24 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-rose-600/5 blur-[150px] pointer-events-none"></div>
         <div className="max-w-screen-2xl mx-auto relative z-10">
+          <h2 className="text-4xl md:text-6xl font-black tracking-tight mb-14">
+            Kiến trúc cốt lõi của Thagore
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-24">
             <div className="feature-card opacity-0 group cursor-default" style={{ perspective: "1000px" }}>
               <div className="text-8xl md:text-[9rem] font-black text-transparent [-webkit-text-stroke:1px_#333] group-hover:[-webkit-text-stroke:2px_#e11d48] transition-all duration-500 mb-8 leading-none flex flex-col">

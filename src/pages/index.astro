@@ -1,6 +1,39 @@
 ---
 import "../styles/global.css";
 import App from "../components/App.jsx";
+
+const siteOrigin = "https://docs.thagore.io.vn";
+const pageUrl = `${siteOrigin}/`;
+const title = "Thagore Language - Ngôn Ngữ Lập Trình Thế Hệ Mới";
+const description =
+  "Thagore là ngôn ngữ lập trình thế hệ mới: cú pháp gần Python, hiệu năng cấp C/C++, hỗ trợ thông dịch linh hoạt và biên dịch AOT tốc độ cao.";
+const ogImage = `${siteOrigin}/thagore-logo.svg`;
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      name: "Thagore Foundation",
+      url: siteOrigin,
+      logo: ogImage
+    },
+    {
+      "@type": "WebSite",
+      name: "Thagore Language",
+      url: pageUrl,
+      inLanguage: "vi-VN",
+      description
+    },
+    {
+      "@type": "SoftwareApplication",
+      name: "Thagore",
+      applicationCategory: "DeveloperApplication",
+      operatingSystem: "Windows, Linux, macOS",
+      url: pageUrl,
+      description
+    }
+  ]
+};
 ---
 
 <!doctype html>
@@ -8,9 +41,40 @@ import App from "../components/App.jsx";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thagore Landing</title>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta
+      name="keywords"
+      content="Thagore, ngôn ngữ lập trình, AOT compiler, thông dịch, Python syntax, hiệu năng C++"
+    />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <link rel="canonical" href={pageUrl} />
+    <link rel="sitemap" href={`${siteOrigin}/sitemap.xml`} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:site_name" content="Thagore Language" />
+    <meta property="og:url" content={pageUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   </head>
   <body>
     <App client:load />
+    <noscript>
+      <p>
+        Thagore là ngôn ngữ lập trình thế hệ mới với cú pháp đơn giản, hỗ trợ
+        thông dịch linh hoạt và biên dịch AOT hiệu năng cao.
+      </p>
+    </noscript>
   </body>
 </html>

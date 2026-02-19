@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Host: https://docs.thagore.io.vn
+Sitemap: https://docs.thagore.io.vn/sitemap.xml

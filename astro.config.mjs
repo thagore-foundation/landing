@@ -8,7 +8,7 @@ const siteUrl = customDomain
   ? `https://${customDomain}`
   : process.env.GITHUB_PAGES
     ? `https://${process.env.GITHUB_REPOSITORY_OWNER}.github.io`
-    : "http://localhost:4321";
+    : "https://docs.thagore.io.vn";
 const basePath = customDomain
   ? "/"
   : process.env.GITHUB_PAGES && repo
