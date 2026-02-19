@@ -3,14 +3,23 @@ import tailwindcss from "@tailwindcss/vite";
 import react from "@astrojs/react";
 
 const repo = process.env.GITHUB_REPOSITORY?.split("/")[1];
+const customDomain = process.env.PAGES_CUSTOM_DOMAIN;
+const siteUrl = customDomain
+  ? `https://${customDomain}`
+  : process.env.GITHUB_PAGES
+    ? `https://${process.env.GITHUB_REPOSITORY_OWNER}.github.io`
+    : "http://localhost:4321";
+const basePath = customDomain
+  ? "/"
+  : process.env.GITHUB_PAGES && repo
+    ? `/${repo}/`
+    : "/";
 
 export default defineConfig({
   output: "static",
   integrations: [react()],
-  site: process.env.GITHUB_PAGES
-    ? `https://${process.env.GITHUB_REPOSITORY_OWNER}.github.io`
-    : "http://localhost:4321",
-  base: process.env.GITHUB_PAGES && repo ? `/${repo}/` : "/",
+  site: siteUrl,
+  base: basePath,
   vite: {
     plugins: [tailwindcss()]
   }
