@@ -410,7 +410,7 @@ export default function App() {
           <div className="text-gray-500 font-mono text-sm tracking-[0.2em] uppercase flex flex-col items-end gap-4">
             <a href="https://github.com/thagore-foundation/thagore" className="hover:text-rose-500 transition-colors">Github / Mã Nguồn</a>
             <a href="#" className="hover:text-rose-500 transition-colors">Twitter (X)</a>
-            <a href="https://discord.gg/T6tfppnKWc" className="hover:text-rose-500 transition-colors">Cộng Đồng Discord</a>
+            <a href="https://discord.gg/zrAsA9SAfF" className="hover:text-rose-500 transition-colors">Cộng Đồng Discord</a>
             <span className="mt-8 opacity-40">© 2026 Thagore Programming Language.</span>
           </div>
         </div>
