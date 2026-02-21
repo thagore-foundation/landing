@@ -227,7 +227,7 @@ export default function App() {
           <a href="#docs" className="hover:text-rose-500 transition-colors">Tổng quan ngôn ngữ</a>
           <a href="#community" className="hover:text-rose-500 transition-colors">Benchmark hiệu năng</a>
         </div>
-        <a href="https://docs.thagore.io.vn/install/quick-start/">
+        <a href="https://docs.thagore.org/install/quick-start/">
         <button className="px-8 py-3 bg-rose-600 text-white font-bold tracking-widest uppercase text-xs hover:bg-rose-500 transition-colors shadow-[0_0_20px_rgba(225,29,72,0.4)]">
           Tải xuống
         </button>
@@ -264,12 +264,12 @@ export default function App() {
               Vừa <strong className="text-white font-semibold border-b border-rose-500">thông dịch</strong> linh hoạt cho phát triển nhanh, vừa <strong className="text-white font-semibold border-b border-rose-500">biên dịch AOT</strong> để triển khai tối ưu trên production.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 font-mono text-sm">
-              <a href="https://docs.thagore.io.vn/install/quick-start/">
+              <a href="https://docs.thagore.org/install/quick-start/">
               <button className="flex items-center justify-center gap-3 px-10 py-5 bg-white text-black font-bold hover:bg-rose-600 hover:text-white hover:shadow-[0_0_30px_rgba(225,29,72,0.6)] transition-all uppercase tracking-widest">
                 <Terminal className="w-5 h-5" /> Cài đặt ngay
               </button>
               </a>
-              <a href="https://docs.thagore.io.vn">
+              <a href="https://docs.thagore.org">
               <button className="flex items-center justify-center gap-3 px-10 py-5 border border-gray-800 hover:border-rose-600 hover:text-rose-500 transition-colors uppercase tracking-widest group bg-black/50 backdrop-blur-sm">
                 <Code2 className="w-5 h-5 group-hover:rotate-12 transition-transform" /> Đọc Tài liệu <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
               </button>
