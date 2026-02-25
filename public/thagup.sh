@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 set -euo pipefail
-curl -fsSL https://raw.githubusercontent.com/thagore-foundation/thagore/28e45cc30f8fb788d60a8302e7f90594675c7b90/scripts/install/thagup-init.sh | bash -s -- "$@"
+curl -fsSL https://raw.githubusercontent.com/thagore-foundation/thagore/589b11778697e2c6d70ab179939c0ea113d8b037/scripts/install/thagup-init.sh | bash -s -- "$@"
