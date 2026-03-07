@@ -233,7 +233,13 @@ export default function App() {
         </button>
         </a>
       </nav>
-
+    <div className="relative z-40 pt-24">
+      <div className="mx-auto max-w-screen-2xl px-6 md:px-12 lg:px-24">
+        <div className="border border-yellow-500/30 bg-yellow-500/10 text-yellow-300 font-mono text-xs md:text-sm tracking-[0.12em] uppercase px-4 py-3">
+          Experimental build — Thagore hiện đang trong giai đoạn phát triển sớm. Một số tính năng trên trang này là định hướng tương lai và có thể chưa khả dụng.
+        </div>
+      </div>
+    </div>
       <main className="relative pt-32 pb-20 px-6 md:px-12 lg:px-24 max-w-screen-2xl mx-auto flex flex-col justify-center min-h-screen">
         <div className="hero-dragon absolute top-1/4 right-10 md:right-32 pointer-events-none opacity-0">
           <img
