@@ -252,7 +252,7 @@ export default function App() {
               CÚ PHÁP ĐƠN GIẢN.
             </SplitText>
             <SplitText itemClass="letter" className="text-rose-600 block mt-2 drop-shadow-[0_0_20px_rgba(225,29,72,0.4)]">
-              SỨC MẠNH VƯỢT TRỘI.
+              Thiết kế cho hiệu năng cao.
             </SplitText>
           </h1>
           <h2 className="text-rose-600 font-mono text-base md:text-xl mb-6 tracking-[0.2em] md:tracking-[0.3em] uppercase flex items-center gap-3">
@@ -260,7 +260,7 @@ export default function App() {
           </h2>
           <div className="hero-subtitle opacity-0" style={{ transform: "translateY(20px)" }}>
             <p className="text-lg md:text-2xl font-light text-gray-400 max-w-3xl leading-relaxed mb-12">
-              Thagore là ngôn ngữ lập trình thế hệ mới kết hợp cú pháp thanh lịch kiểu Python và hiệu năng cấp C/C++.
+              Thagore là ngôn ngữ lập trình thế hệ mới kết hợp cú pháp thanh lịch gọn gàng dễ học dễ gõ và hướng tới hiệu năng gần native.
               Vừa <strong className="text-white font-semibold border-b border-rose-500">thông dịch</strong> linh hoạt cho phát triển nhanh, vừa <strong className="text-white font-semibold border-b border-rose-500">biên dịch AOT</strong> để triển khai tối ưu trên production.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 font-mono text-sm">
@@ -300,12 +300,12 @@ export default function App() {
               <span className="text-rose-600">CHẠY NHANH HƠN.</span>
             </h2>
             <p className="code-text-anim text-xl md:text-2xl text-gray-400 font-light mb-12 opacity-0 leading-relaxed">
-              Không cần học lại cú pháp. Nếu bạn biết Python, bạn đã biết Thagore. Trình biên dịch JIT và AOT tích hợp sẵn sẽ tối ưu hóa mã của bạn tới từng cycle phần cứng.
+              Không cần học lại cú pháp. Nếu bạn quen Python, bạn sẽ thấy Thagore dễ tiếp cận. Trình biên dịch JIT và AOT tích hợp sẵn sẽ tối ưu hóa mã của bạn tới mức thấp cho tác vụ phù hợp.
             </p>
             <div className="space-y-8 font-mono text-lg text-gray-300">
               {[
-                "Cú pháp hoàn toàn tương thích Python.",
-                "Type Hints để biên dịch AOT siêu việt.",
+                "Cú pháp lấy cảm hứng mạnh từ Python",
+                "Type annotations hỗ trợ tối ưu và kiểm tra tĩnh.",
                 "Zero GC Pauses với quản lý bộ nhớ ARC."
               ].map((text, idx) => (
                 <div key={idx} className="code-text-anim flex items-center gap-6 opacity-0 group cursor-default">
@@ -327,19 +327,19 @@ export default function App() {
             <div className="text-8xl md:text-[10rem] font-black text-rose-600 leading-none tracking-tighter">
               <span className="bench-number" data-val="100">0</span><span className="text-5xl md:text-6xl text-white">x</span>
             </div>
-            <div className="bench-label text-xl font-mono text-gray-500 uppercase tracking-widest mt-6 opacity-0">Nhanh hơn CPython</div>
+            <div className="bench-label text-xl font-mono text-gray-500 uppercase tracking-widest mt-6 opacity-0">Nhanh hơn Scratch</div>
           </div>
           <div className="flex flex-col justify-center">
             <div className="text-8xl md:text-[10rem] font-black text-white leading-none tracking-tighter">
               <span className="bench-number" data-val="0">50</span><span className="text-5xl md:text-6xl text-rose-600">ms</span>
             </div>
-            <div className="bench-label text-xl font-mono text-gray-500 uppercase tracking-widest mt-6 opacity-0">Độ trễ khởi động AOT</div>
+            <div className="bench-label text-xl font-mono text-gray-500 uppercase tracking-widest mt-6 opacity-0">Không hẳn là độ trễ khởi động AOT</div>
           </div>
           <div className="flex flex-col justify-center">
             <div className="text-8xl md:text-[10rem] font-black text-gray-600 leading-none tracking-tighter">
               <span className="bench-number" data-val="100">0</span><span className="text-5xl md:text-6xl text-rose-600">%</span>
             </div>
-            <div className="bench-label text-xl font-mono text-gray-500 uppercase tracking-widest mt-6 opacity-0">Tương thích thư viện C</div>
+            <div className="bench-label text-xl font-mono text-gray-500 uppercase tracking-widest mt-6 opacity-0">Không hẳn là tương thích thư viện C</div>
           </div>
         </div>
       </section>
@@ -369,7 +369,7 @@ export default function App() {
               </div>
               <h4 className="text-3xl font-bold uppercase tracking-tight mb-4 text-white group-hover:text-rose-500 transition-colors">Hiệu Suất<br />Cực Đại</h4>
               <p className="text-gray-400 text-lg leading-relaxed">
-                Loại bỏ độ trễ của GIL (Global Interpreter Lock). Hỗ trợ đa luồng (multi-threading) thực sự, tối ưu hóa bộ nhớ tới mức phần cứng.
+                Thiết kế cho concurrency và parallel execution hiệu quả. Hỗ trợ đa luồng (multi-threading) thực sự, tối ưu hóa bộ nhớ tới mức phần cứng.
               </p>
             </div>
 
@@ -380,7 +380,7 @@ export default function App() {
               </div>
               <h4 className="text-3xl font-bold uppercase tracking-tight mb-4 text-white group-hover:text-rose-500 transition-colors">Hệ Sinh Thái<br />Mở Rộng</h4>
               <p className="text-gray-400 text-lg leading-relaxed">
-                Dễ dàng gọi các thư viện C/C++ (FFI) mà không có overhead, đồng thời tái sử dụng trực tiếp các package từ hệ sinh thái Python.
+                Dễ dàng gọi các thư viện C/C++ (FFI) mà overhead thấp, đồng thời tái sử dụng trực tiếp các package từ hệ sinh thái Python.
               </p>
             </div>
           </div>
