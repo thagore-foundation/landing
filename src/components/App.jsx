@@ -252,7 +252,7 @@ export default function App() {
               CÚ PHÁP ĐƠN GIẢN.
             </SplitText>
             <SplitText itemClass="letter" className="text-rose-600 block mt-2 drop-shadow-[0_0_20px_rgba(225,29,72,0.4)]">
-              Thiết kế cho hiệu năng cao.
+              THIẾT KẾ CHO HIỆU NĂNG CAO.
             </SplitText>
           </h1>
           <h2 className="text-rose-600 font-mono text-base md:text-xl mb-6 tracking-[0.2em] md:tracking-[0.3em] uppercase flex items-center gap-3">
@@ -325,7 +325,7 @@ export default function App() {
         <div className="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 text-center md:text-left">
           <div className="flex flex-col justify-center">
             <div className="text-8xl md:text-[10rem] font-black text-rose-600 leading-none tracking-tighter">
-              <span className="bench-number" data-val="100">0</span><span className="text-5xl md:text-6xl text-white">x</span>
+              <span className="bench-number" data-val="100">0</span><span className="text-5xl md:text-6xl text-white">%</span>
             </div>
             <div className="bench-label text-xl font-mono text-gray-500 uppercase tracking-widest mt-6 opacity-0">Nhanh hơn Scratch</div>
           </div>
