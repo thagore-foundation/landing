@@ -156,6 +156,7 @@ main,
 .topbar-cta,
 .primary-link,
 .secondary-link,
+.source-link,
 .discord-link,
 .community-button,
 .cta-links a {
@@ -299,6 +300,7 @@ main {
 
 .primary-link,
 .secondary-link,
+.source-link,
 .discord-link {
   display: inline-flex;
   align-items: center;
@@ -320,6 +322,12 @@ main {
   color: #ede0da;
 }
 
+.source-link {
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.04);
+  color: #f2e8e2;
+}
+
 .discord-link,
 .community-button {
   border: 1px solid rgba(243, 191, 103, 0.32);
@@ -330,6 +338,12 @@ main {
 .secondary-link:hover {
   transform: translateY(-1px);
   border-color: rgba(255, 255, 255, 0.3);
+}
+
+.source-link:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.38);
+  background: rgba(255, 255, 255, 0.07);
 }
 
 .discord-link:hover,

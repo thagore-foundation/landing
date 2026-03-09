@@ -27,6 +27,7 @@ const copy = {
     install: "Install",
     community: "Join Discord",
     communityNote: "Discuss, debate, and send feedback to the community.",
+    sourceCta: "Read the source on GitHub",
     eyebrow: "In development toolchain",
     heroTitle: "A native language project",
     heroTitleSub:
@@ -178,6 +179,7 @@ const copy = {
     install: "Cài đặt",
     community: "Vào Discord",
     communityNote: "Thảo luận, tranh luận và góp ý cùng cộng đồng.",
+    sourceCta: "Đọc source trên GitHub",
     eyebrow: "Toolchain đang phát triển",
     heroTitle: "Một dự án ngôn ngữ native",
     heroTitleSub:
@@ -436,6 +438,10 @@ export default function App() {
               </a>
               <a className="secondary-link" href="https://docs.thagore.org/">
                 <span>{t.heroSecondary}</span>
+                <ArrowRight size={18} />
+              </a>
+              <a className="source-link" href="https://github.com/thagore-foundation/thagore">
+                <span>{t.sourceCta}</span>
                 <ArrowRight size={18} />
               </a>
               <a className="discord-link" href="https://discord.gg/WhFxrCuNvn">
