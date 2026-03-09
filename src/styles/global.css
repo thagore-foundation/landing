@@ -126,9 +126,38 @@ main,
   color: #fff;
 }
 
+.topbar-tools {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lang-switch {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.lang-switch button {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  padding: 10px 12px;
+  font: 600 0.75rem/1 var(--mono);
+  letter-spacing: 0.12em;
+  cursor: pointer;
+}
+
+.lang-switch button.is-active {
+  background: var(--accent);
+  color: white;
+}
+
 .topbar-cta,
 .primary-link,
 .secondary-link,
+.discord-link,
+.community-button,
 .cta-links a {
   transition:
     transform 180ms ease,
@@ -269,7 +298,8 @@ main {
 }
 
 .primary-link,
-.secondary-link {
+.secondary-link,
+.discord-link {
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -290,9 +320,23 @@ main {
   color: #ede0da;
 }
 
+.discord-link,
+.community-button {
+  border: 1px solid rgba(243, 191, 103, 0.32);
+  background: rgba(243, 191, 103, 0.08);
+  color: #f5d8a8;
+}
+
 .secondary-link:hover {
   transform: translateY(-1px);
   border-color: rgba(255, 255, 255, 0.3);
+}
+
+.discord-link:hover,
+.community-button:hover {
+  transform: translateY(-1px);
+  border-color: rgba(243, 191, 103, 0.55);
+  background: rgba(243, 191, 103, 0.14);
 }
 
 .hero-panel {
@@ -303,6 +347,7 @@ main {
 
 .warning-card,
 .apology-card,
+.community-card,
 .proof-note {
   padding: 22px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
@@ -324,6 +369,17 @@ main {
 
 .warning-card strong {
   color: white;
+}
+
+.community-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  padding: 12px 14px;
+  font: 600 0.8rem/1 var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
 }
 
 .statement-band {
@@ -462,6 +518,13 @@ main {
 .panel-head {
   color: #ffe0d2;
   margin-bottom: 20px;
+}
+
+.panel-copy {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.75;
 }
 
 .panel ul {
@@ -618,6 +681,11 @@ main {
     justify-content: space-between;
     gap: 8px;
     flex-wrap: wrap;
+  }
+
+  .topbar-tools {
+    width: 100%;
+    justify-content: space-between;
   }
 
   main,
