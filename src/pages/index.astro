@@ -4,9 +4,9 @@ import App from "../components/App.jsx";
 
 const siteOrigin = "https://thagore.io.vn";
 const pageUrl = `${siteOrigin}/`;
-const title = "Thagore Language - Ngôn Ngữ Lập Trình Thế Hệ Mới";
+const title = "Thagore - In-development native language and toolchain";
 const description =
-  "Thagore là ngôn ngữ lập trình thế hệ mới: cú pháp gần Python, hiệu năng cấp C/C++, hỗ trợ thông dịch linh hoạt và biên dịch AOT tốc độ cao.";
+  "Thagore is an in-development programming language and toolchain focused on native builds, compiler-visible program structure, and honest release communication.";
 const ogImage = `${siteOrigin}/thagore-logo.svg`;
 const schema = {
   "@context": "https://schema.org",
@@ -19,9 +19,9 @@ const schema = {
     },
     {
       "@type": "WebSite",
-      name: "Thagore Language",
+      name: "Thagore",
       url: pageUrl,
-      inLanguage: "vi-VN",
+      inLanguage: "en",
       description
     },
     {
@@ -37,7 +37,7 @@ const schema = {
 ---
 
 <!doctype html>
-<html lang="vi">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -45,7 +45,7 @@ const schema = {
     <meta name="description" content={description} />
     <meta
       name="keywords"
-      content="Thagore, ngôn ngữ lập trình, AOT compiler, thông dịch, Python syntax, hiệu năng C++"
+      content="Thagore, programming language, compiler, native toolchain, LLVM, WASM playground"
     />
     <meta
       name="robots"
@@ -55,8 +55,8 @@ const schema = {
     <link rel="sitemap" href={`${siteOrigin}/sitemap.xml`} />
 
     <meta property="og:type" content="website" />
-    <meta property="og:locale" content="vi_VN" />
-    <meta property="og:site_name" content="Thagore Language" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Thagore" />
     <meta property="og:url" content={pageUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -72,8 +72,8 @@ const schema = {
     <App client:load />
     <noscript>
       <p>
-        Thagore là ngôn ngữ lập trình thế hệ mới với cú pháp đơn giản, hỗ trợ
-        thông dịch linh hoạt và biên dịch AOT hiệu năng cao.
+        Thagore is an in-development programming language and toolchain focused on native builds,
+        release discipline, and measurable compiler progress.
       </p>
     </noscript>
   </body>
