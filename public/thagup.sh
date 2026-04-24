@@ -45,7 +45,7 @@ Options:
 
 Examples:
   thagup.sh
-  thagup.sh --tag v0.8.4 --drago-tag v0.1.0
+  thagup.sh --tag v0.9.7 --drago-tag v1.0.7
   thagup.sh --without-drago
 EOF
 }

@@ -34,7 +34,7 @@ const copy = {
       "built for resilient systems, measured in public, and still under active construction.",
     heroLead:
       "Thagore is a programming language designed for resilient and adaptable software, where programs can continue from prior state after interruption instead of treating every failure as a full restart. This page states what is shipped, what is measured, and what is still in progress.",
-    heroPrimary: "Install v0.9.6",
+    heroPrimary: "Install v0.9.7",
     heroSecondary: "Read the docs",
     warningTitle: "Status warning",
     warningBody:
@@ -131,7 +131,7 @@ const copy = {
     ],
     releaseTitle: "Current public release facts",
     releaseFacts: [
-      "Current public line: v0.9.6",
+      "Current public line: v0.9.7",
       "Windows, macOS and Linux release assets published",
       "Docs, installers and playground updated on the same line",
       "This project remains marked as in development"
@@ -186,7 +186,7 @@ const copy = {
       "được thiết kế cho các hệ thống bền vững, đo đạc công khai, và vẫn đang được hoàn thiện tích cực.",
     heroLead:
       "Thagore là một ngôn ngữ lập trình được thiết kế để xây dựng ứng dụng bền vững và linh hoạt, nơi chương trình có thể tiếp tục từ trạng thái trước đó sau khi bị gián đoạn thay vì xem mọi lỗi như một lần khởi động lại hoàn toàn. Trang này chỉ ghi những gì đã phát hành, đã đo đạc và đang được làm tiếp.",
-    heroPrimary: "Cài v0.9.6",
+    heroPrimary: "Cài v0.9.7",
     heroSecondary: "Đọc tài liệu",
     warningTitle: "Cảnh báo trạng thái",
     warningBody:
@@ -283,7 +283,7 @@ const copy = {
     ],
     releaseTitle: "Sự thật về nhánh release hiện tại",
     releaseFacts: [
-      "Nhánh public hiện tại: v0.9.6",
+      "Nhánh public hiện tại: v0.9.7",
       "Đã có release asset cho Windows, macOS và Linux",
       "Docs, installer và playground đã được cập nhật cùng line",
       "Toàn bộ dự án vẫn được đánh dấu là đang phát triển"
